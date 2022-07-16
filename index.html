@@ -38,7 +38,7 @@
             </li>
 
             <li>
-              <a href=""> Expences</a>
+              <a href=""> Expenses</a>
             </li>
             <li>
               <a href=""> ERP </a>
@@ -50,11 +50,11 @@
       <div class="milk_form">
         <form name="form">
           <label> SHED A </label>
-          <select name="cars" id="cars">
-            <option value="volvo">week 1</option>
-            <option value="saab">week 2</option>
-            <option value="opel">week 3</option>
-            <option value="audi">week 4</option>
+          <select name="sheds" id="cars">
+            <option value="#">week 1</option>
+            <option value="#">week 2</option>
+            <option value="#">week 3</option>
+            <option value="#">week 4</option>
           </select>
           <select id="month" name="month"></select>
 
@@ -62,11 +62,11 @@
           <input id="InputA" type="text" placeholder="enter litres"><br><br>
 
           <label> SHED B </label>
-          <select name="cars" id="cars">
-            <option value="volvo">week 1</option>
-            <option value="saab">week 2</option>
-            <option value="opel">week 3</option>
-            <option value="audi">week 4</option>
+          <select name="sheds" id="cars">
+            <option value="#">week 1</option>
+            <option value="#">week 2</option>
+            <option value="#">week 3</option>
+            <option value="#">week 4</option>
           </select>
           <select id="month1" name="month"></select>
 
@@ -74,11 +74,11 @@
           <input id="InputB" type="text" placeholder="enter litres"><br><br>
 
           <label> SHED C </label>
-          <select name="cars" id="cars">
-            <option value="volvo">week 1</option>
-            <option value="saab">week 2</option>
-            <option value="opel">week 3</option>
-            <option value="audi">week 4</option>
+          <select name="#" id="sheds">
+            <option value="#">week 1</option>
+            <option value="#">week 2</option>
+            <option value="#">week 3</option>
+            <option value="#">week 4</option>
           </select>
 
           <select id="month2" name="month"></select>
@@ -86,11 +86,11 @@
           <input id="InputC" type="text" placeholder="enter litres"><br><br>
 
           <label> SHED D </label>
-          <select name="cars" id="cars">
-            <option value="volvo">week 1</option>
-            <option value="saab">week 2</option>
-            <option value="opel">week 3</option>
-            <option value="audi">week 4</option>
+          <select name="sheds" id="cars">
+            <option value="#">week 1</option>
+            <option value="#">week 2</option>
+            <option value="#">week 3</option>
+            <option value="#">week 4</option>
           </select>
 
           <select id="month3" name="month"></select>
@@ -107,15 +107,51 @@
           <div id="output4"> output </div>
           <div id="output"> output </div>
 
+          <script>
 
-        </form>
-      </div>
+
+            (function () {
+              let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+              var month_selected = (new Date).getMonth(); // current month
+              var option = '';
+              option = '<option>Month</option>'; // first option
+
+              for (let i = 0; i < months.length; i++) {
+                let month_number = (i + 1);
+
+                // value month number with 0. [01 02 03 04..]
+                let month = (month_number <= 9) ? '0' + month_number : month_number;
+
+                // or value month number. [1 2 3 4..]
+                // let month = month_number;
+
+                // or value month names. [January February]
+                // let month = months[i];
+
+                let selected = (i === month_selected ? ' selected' : '');
+                option += '<option value="' + month + '"' + selected + '>' + months[i] + '</option>';
+              }
+              document.getElementById("month").innerHTML = option;
+              document.getElementById("month1").innerHTML = option;
+              document.getElementById("month2").innerHTML = option;
+              document.getElementById("month3").innerHTML = option;
+            })();
+          </script>
+
+
+</html>
+
+</form>
+</div>
+
+
+<script />
 
 </body>
 
 <footer>
 
-  <script src="index.js"></script>
+  <script src="./index.js"></script>
 
 
 

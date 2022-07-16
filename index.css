@@ -62,11 +62,9 @@ body {
     font-family: "Oleo Script";
 }
 
-
-
 .milk_form {
     display: flex;
-    border: radius 5%;
-    ;
-
+    align-items: center;
+    margin-top: 0%;
+    margin-left: 20%;
 }
