@@ -66,7 +66,7 @@ body {
 
 .milk_form {
     display: flex;
-    align-content: space-around;
-    width: 100%;
+    border: radius 5%;
+    ;
 
 }
