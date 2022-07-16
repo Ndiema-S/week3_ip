@@ -1,0 +1,56 @@
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="device-width,initial">
+        <link rel="stylesheet" href="./assets/index.css">
+        <title>Dairy Farm</title>
+
+    </head>
+    <body>
+        <html>
+            <body>
+          <title> Milk Production </title>
+          <h1> Milk Production </h1>
+          <form name="form">
+           <input id="InputName" type="text" placeholder="enter shade">
+           <input id="InputA" type="text" placeholder="enter litres"><br><br>
+           
+           <input id="InputName" type="text" placeholder="enter shade">
+           <input id="InputB" type="text" placeholder="enter litres"><br><br>
+           
+           <input id="InputName" type="text" placeholder="enter shade">
+           <input id="InputC" type="text" placeholder="enter litres"><br><br>
+           
+           <input id="InputName" type="text" placeholder="enter shade">
+           <input id="InputD" type="text" placeholder="enter litres"><br><br>
+          
+           <input type="button" value="submit" onClick="process()" />
+           
+           
+          </form>
+          <br>
+          <div id="output"> output </div>
+          <script>
+           function process() {
+           var name = String(document.form.InputName.value);
+           var a = Number(document.form.InputA.value);
+          
+           
+           var name = String(document.form.InputName.value);
+           var b = Number(document.form.InputA.value);
+           
+           var name = String(document.form.InputName.value);
+           var c = Number(document.form.InputA.value);
+           
+           var name = String(document.form.InputName.value);
+           var d = Number(document.form.InputA.value);
+           document.getElementById('output').innerHTML = "your production in shed " +
+          name + " " + a +" litres per day " ;
+           }
+          </script>
+          
+           </script>
+           </html>
+    </body>
+</html>
