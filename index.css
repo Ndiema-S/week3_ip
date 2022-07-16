@@ -61,3 +61,12 @@ body {
 .logo>h1 {
     font-family: "Oleo Script";
 }
+
+
+
+.milk_form {
+    display: flex;
+    align-content: space-around;
+    width: 100%;
+
+}
