@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+}
+
+.dairy {
+    padding: 5%;
+    background-color: orange;
+    display: flex;
+    align-content: center;
+}
