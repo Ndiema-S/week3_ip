@@ -1,10 +1,63 @@
 * {
     margin: 0;
+    padding: 0;
 }
 
-.dairy {
-    padding: 5%;
-    background-color: orange;
+body {
+    background-color: #fff;
+    margin: auto;
+    width: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+
+    font-family: "Space Grotesk", sans-serif;
+    background-image: url(./assets/img/pexels-kellie-churchman-1001676.jpg)
+}
+
+@media (min-width: 1240px) {
+    .container {
+        max-width: 1290px !important;
+        margin: auto !important;
+        height: 100%;
+    }
+}
+
+.container {
+    max-width: 1024;
+    background-color: #fafafa;
+}
+
+.nav-bar {
     display: flex;
-    align-content: center;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    background-color: orange;
+}
+
+.nav-links>ul {
+    display: flex !important;
+    align-items: center;
+}
+
+.nav-links>ul>li>a {
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    font-size: 17px;
+    padding: 20px;
+}
+
+.nav-links>ul>li {
+    list-style: none;
+}
+
+.nav-links>ul>li>a:hover {
+    color: black font-weight: 600;
+}
+
+.logo>h1 {
+    font-family: "Oleo Script";
 }
