@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -21,9 +20,7 @@
 
 <body>
   <div class="container">
-
-    <head class="nav-prim-bar">
-      <div class="nav-bar">
+    <div class="nav-bar">
         <div class="logo">
           <h1>Le Lait Dairies</h1>
         </div>
@@ -45,9 +42,9 @@
             </li>
         </div>
       </div>
-      <div />
+      
 
-      <div class="milk_form">
+     <div class="milk_form">
         <form name="form">
           <label> SHED A </label>
           <select name="sheds" id="cars">
@@ -58,7 +55,7 @@
           </select>
           <select id="month" name="month"></select>
 
-          <input id="name" type="text" placeholder="enter shade">
+          <input id="name" type="text" placeholder="enter amount">
           <input id="InputA" type="text" placeholder="enter litres"><br><br>
 
           <label> SHED B </label>
@@ -70,7 +67,7 @@
           </select>
           <select id="month1" name="month"></select>
 
-          <input id="InputName" type="text" placeholder="enter shade">
+          <input id="InputName" type="text" placeholder="enter amount">
           <input id="InputB" type="text" placeholder="enter litres"><br><br>
 
           <label> SHED C </label>
@@ -82,7 +79,7 @@
           </select>
 
           <select id="month2" name="month"></select>
-          <input id="InputName" type="text" placeholder="enter shade">
+          <input id="InputName" type="text" placeholder="enter amount">
           <input id="InputC" type="text" placeholder="enter litres"><br><br>
 
           <label> SHED D </label>
@@ -94,7 +91,7 @@
           </select>
 
           <select id="month3" name="month"></select>
-          <input id="InputName" type="text" placeholder="enter shade">
+          <input id="InputName" type="text" placeholder="enter amount">
           <input id="InputD" type="text" placeholder="enter litres"><br><br>
 
           <input type="button" value="submit" onClick="process()" />
@@ -106,53 +103,10 @@
           <div id="output3"> output </div>
           <div id="output4"> output </div>
           <div id="output"> output </div>
-
-          <script>
-
-
-            (function () {
-              let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-              var month_selected = (new Date).getMonth(); // current month
-              var option = '';
-              option = '<option>Month</option>'; // first option
-
-              for (let i = 0; i < months.length; i++) {
-                let month_number = (i + 1);
-
-                // value month number with 0. [01 02 03 04..]
-                let month = (month_number <= 9) ? '0' + month_number : month_number;
-
-                // or value month number. [1 2 3 4..]
-                // let month = month_number;
-
-                // or value month names. [January February]
-                // let month = months[i];
-
-                let selected = (i === month_selected ? ' selected' : '');
-                option += '<option value="' + month + '"' + selected + '>' + months[i] + '</option>';
-              }
-              document.getElementById("month").innerHTML = option;
-              document.getElementById("month1").innerHTML = option;
-              document.getElementById("month2").innerHTML = option;
-              document.getElementById("month3").innerHTML = option;
-            })();
-          </script>
-
-
-</html>
-
-</form>
-</div>
-
-
-<script />
+        </form>
+      </div>
+<script src="./index.js"></script>
 
 </body>
 
-<footer>
-
-  <script src="./index.js"></script>
-
-
-
-</footer>
+</html>
