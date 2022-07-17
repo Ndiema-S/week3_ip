@@ -42,15 +42,13 @@
             </li>
         </div>
       </div>
-
-     <!--add button-->
-
-     <button onclick="totalProduction()">Report</button>
+<!--add button-->
+     <div>
+       <button onclick="totalProduction()">Report</button>
      <div id="Sum">Sum</div>
      <button onclick="incomeOverTime()">Click</button>
 
      <div id="total-production"></div>
-
      <div>
          <form>
              <input name="sellling_price" id="sellling_price" type="text">
@@ -59,3 +57,56 @@
      </div>
  </body>
  
+ <!--milk form-->
+
+ <div class="milk_form">
+  <form name="form">
+    <label> ShedA </label>
+    <select name="sheds" id="sheds">
+      <option value="#">week 1</option>
+    </select>
+    <select id="month" name="month"></select>
+
+    <input id="InputA" type="text" placeholder="enter litres"><br><br>
+
+    <label> ShedB </label>
+    <select name="sheds" id="sheds">
+      <option value="#">week 1</option>
+    
+    </select>
+    <select id="month1" name="month"></select>
+
+    <input id="InputB" type="text" placeholder="enter litres"><br><br>
+
+    <label> ShedC </label>
+    <select name="#" id="sheds">
+      <option value="#">week 1</option>
+    
+    </select>
+
+    <select id="month2" name="month"></select>
+    <input id="InputC" type="text" placeholder="enter litres"><br><br>
+
+    <label> ShedD </label>
+    <select name="sheds" id="cars">
+      <option value="#">week 1</option>
+      
+    </select>
+
+    <select id="month3" name="month"></select>
+
+    <input id="InputD" type="text" placeholder="enter litres"><br><br>
+
+    <input type="button" value="submit" onClick="process()" />
+
+    <br>
+    <div id="output1"> output </div>
+    <div id="output2"> output </div>
+    <div id="output3"> output </div>
+    <div id="output4"> output </div>
+    <div id="output"> output </div>
+  </form>
+</div>
+<script src="./index.js"></script>
+</body>
+</html>
