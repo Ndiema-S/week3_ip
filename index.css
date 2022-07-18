@@ -62,22 +62,29 @@ body {
     font-family: "Oleo Script";
 }
 
-.milk_form {
-    display: flex;
-    margin-left: 20%;
-    background-color: white;
-    position: absolute;
-    top: 200px;
-    left: 600px;
-    padding: 10px;
-}
-
 .form {
     display: flex;
-    margin-left: 20%;
+    justify-content: space-between;
+    display: block;
+    height: 50px;
+    margin: auto;
+    margin-left: 0;
+    flex-direction: column;
     background-color: white;
-    position: absolute;
-    top: 200px;
-    left: 600px;
+    margin-bottom: 40px;
     padding: 10px;
+}
+.Milk-Production{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    margin: auto;
+    /* display: flex; */
+}
+h3{
+    margin-top: 30px;
+
+}
+form{
+    float: right;
 }

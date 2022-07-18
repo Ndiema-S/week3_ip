@@ -11,38 +11,18 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&family=Oleo+Script:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
+  
   <link rel="stylesheet" href="index.css" />
 
   <title>Le Lait Dairies</title>
 </head>
-
 <body>
-  <div class="container">
+  <div  class="container">
     <div class="nav-bar">
-        <div class="logo">
-          <h1>Le Lait Dairies</h1>
-        </div>
-        <div class="nav-links">
-          <ul>
-            <li><a href=""> Home </a></li>
-            <li>
-              <a href=""> Sales </a>
-            </li>
-            <li>
-              <a href=""> Inventory</a>
-            </li>
-
-            <li>
-              <a href=""> Expenses</a>
-            </li>
-            <li>
-              <a href=""> ERP </a>
-            </li>
-        </div>
+       <div class="logo">
+        <h1>Le Lait Dairies</h1>
       </div>
+<<<<<<< HEAD
 <div class="Milk-Production"></div>
 
 
@@ -63,10 +43,34 @@
         <button type="submit" name="submit" onclick="incomeOverTime()">Check Earnings</button>
     </form>
   </div>
+=======
+      <div class="nav-links">
+        <ul>
+          <li><a href=""> Home </a></li>
+          <li><a href=""> Sales </a></li>
+          <li><a href=""> Inventory</a></li>
+          <li><a href=""> Expenses</a></li>
+          <li><a href=""> ERP </a></li>
+        </ul>
+      </div>
+    </div>
+      <div class="Milk-Production">
+        <div class="form">
+          <div class="report">
+            <button onclick="totalProduction()">Report</button>
+            <div id="Sum">Sum</div>
+            <button onclick="incomeOverTime()">Click</button>
+          </div>
+          <div class="report">
+            <input name="sellling_price" id="sellling_price" type="text">
+            <button type="submit" name="submit" onclick="incomeOverTime()">Check Earnings</button>
+          </div>
+        </div>
+      <h3>Total weekly milk production</h3>
+            <div id="total-production"></div>
+          </div>
+>>>>>>> main
   </div>
-
-<script src="./index.js"></script>
-
-</div>
+  <script src="./index.js"></script>
 </body>
 </html>

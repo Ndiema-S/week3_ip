@@ -50,14 +50,8 @@ const totalProduction = () => {
         
         document.getElementById("total-production").innerHTML = "<p>"+ ShadeAProduction +"<p>" + "<p>"+ 
             ShadeBProduction +"<p>" + "<p>"+ ShadeCProduction +"<p>"  + "<p>"+ ShadeDProduction +"<p>"  + "<p>"+ TotaMilkAmount +"<p>"
-
-
 }
-
-
-
-
-const incomeOverTime = () => {
+    const incomeOverTime = () => {
     sellling_price = document.getElementById("sellling_price").value;
     event.preventDefault();
     let TotalMilk = 0;
@@ -95,10 +89,17 @@ const incomeOverTime = () => {
 
 
     let totalMilkProduction =  TotalMilk * sellling_price
-    let totalIncomePerMonth = totalMilkProduction *4
     document.getElementById("Sum").innerHTML = "Your weekly income will be ksh " + totalMilkProduction;
+
+
+    
+}
+function montlyIncome(){
+    let totalIncomePerMonth = totalMilkProduction *4
+    document.getElementById(incomePerMonth).innerHTML=incomePerMonth;
     // return totalMilkProduction;
 }
+montlyIncome()
 
 
 
