@@ -1,60 +1,60 @@
-alert("hello)")
-
 let milkProductions = [
-    {
-"ShedA" :  [510, 456,  549, 569,  569,  553, 564]},
-{"ShedB" :[510, 540,  549, 123,  569,  553, 234]}
-,
-{"ShedC" :  [876, 234,  549, 678,  345,  553, 564]},
-{"ShedD" :  [510, 540,  549, 234,  567,  678, 543]}
+        {
+    "ShadeA" :  [510, 456,  549, 569,  569,  553, 564]},
+    {"ShadeB" :[510, 540,  549, 123,  569,  553, 234]}
+    ,
+    {"ShadeC" :  [876, 234,  549, 678,  345,  553, 564]},
+    {"ShadeD" :  [510, 540,  549, 234,  567,  678, 543]}
 
 ];
 
 const totalProduction = () => {
     let TotalMilk = 0;
 
-        ShedA = milkProductions[0]["ShedA"]
-        ShedASum = 0;
-        for(shed_a = 0; shed_a < ShedA.length; shed_a++){
-            ShedASum += ShedA[shed_a]
+        ShadeA = milkProductions[0]["ShadeA"]
+        ShadeASum = 0;
+        for(shade_a = 0; shade_a < ShadeA.length; shade_a++){
+            ShadeASum += ShadeA[shade_a]
 
         }
 
-        ShedB = milkProductions[1]["ShadeB"];
-        ShedBSum = 0;
-        for(shed_b= 0; shed_b < ShedB.length; shed_b++){
-            ShedBSum += ShedB[shed_b];
+        ShadeB = milkProductions[1]["ShadeB"];
+        ShadeBSum = 0;
+        for(shade_b= 0; shade_b < ShadeB.length; shade_b++){
+            ShadeBSum += ShadeB[shade_b];
 
         }
 
         
-        ShedC = milkProductions[2]["ShadeC"];
-        ShedCSum = 0;
-        for(shed_c= 0; shed_c< ShedC.length; shed_c++){
-            ShedCSum += ShedC[shed_c];
+        ShadeC = milkProductions[2]["ShadeC"];
+        ShadeCSum = 0;
+        for(shade_c= 0; shade_c< ShadeC.length; shade_c++){
+            ShadeCSum += ShadeC[shade_c];
 
         }
 
-        SheD = milkProductions[3]["ShadeD"];
-        ShedDSum = 0;
-        for(shed_d= 0; shed_d< ShedD.length; shed_d++){
-            ShedDSum += SheD[shed_d];
+        ShadeD = milkProductions[3]["ShadeD"];
+        ShadeDSum = 0;
+        for(shade_d= 0; shade_d< ShadeD.length; shade_d++){
+            ShadeDSum += ShadeD[shade_d];
 
         }        
 
-        TotalMilk = ShedASum + ShedBSum + ShedCSum + ShedDSum
-        let ShedAProduction = "Your prodution in Shade A is " + ShedASum + " litres per week."
-        let ShedBProduction = "Your prodution in Shade B is " + ShedBSum + " litres per week."
-        let ShedCProduction = "Your prodution in Shade C is " + ShedCSum + " litres per week."
-        let ShedDProduction = "Your prodution in Shade D is " + ShedDSum + " litres per week."
+        TotalMilk = ShadeASum + ShadeBSum + ShadeCSum + ShadeDSum
+        let ShadeAProduction = "Your prodution in Shade A is " + ShadeASum + " litres per week."
+        let ShadeBProduction = "Your prodution in Shade B is " + ShadeBSum + " litres per week."
+        let ShadeCProduction = "Your prodution in Shade C is " + ShadeCSum + " litres per week."
+        let ShadeDProduction = "Your prodution in Shade D is " + ShadeDSum + " litres per week."
         let TotaMilkAmount = "Total amount of mil produced by all shades is " + TotalMilk + " litres per week."
 
         
-        document.getElementById("total-production").innerHTML = "<p>"+ ShedAProduction +"<p>" + "<p>"+ 
-            ShedBProduction +"<p>" + "<p>"+ ShedCProduction +"<p>"  + "<p>"+ ShedDProduction +"<p>"  + "<p>"+ TotaMilkAmount +"<p>"
+        document.getElementById("total-production").innerHTML = "<p>"+ ShadeAProduction +"<p>" + "<p>"+ 
+            ShadeBProduction +"<p>" + "<p>"+ ShadeCProduction +"<p>"  + "<p>"+ ShadeDProduction +"<p>"  + "<p>"+ TotaMilkAmount +"<p>"
 
 
 }
+
+
 
 
 const incomeOverTime = () => {
@@ -62,36 +62,36 @@ const incomeOverTime = () => {
     event.preventDefault();
     let TotalMilk = 0;
 
-        ShedA = milkProductions[0]["ShadeA"]
-        ShedASum = 0;
-        for(shed_a = 0; shed_a < ShedA.length; shed_a++){
-            ShedASum += ShedA[shed_a]
+        ShadeA = milkProductions[0]["ShadeA"]
+        ShadeASum = 0;
+        for(shade_a = 0; shade_a < ShadeA.length; shade_a++){
+            ShadeASum += ShadeA[shade_a]
 
         }
 
-        ShedB = milkProductions[1]["ShedB"];
-        ShedBSum = 0;
-        for(shed_b= 0; shed_b < ShedB.length; shede_b++){
-            ShedBSum += ShedB[shed_b];
+        ShadeB = milkProductions[1]["ShadeB"];
+        ShadeBSum = 0;
+        for(shade_b= 0; shade_b < ShadeB.length; shade_b++){
+            ShadeBSum += ShadeB[shade_b];
 
         }
 
         
-        ShedC = milkProductions[2]["ShadeC"];
-        ShedCSum = 0;
-        for(shed_c= 0; shed_c< ShedC.length; shed_c++){
-            ShedCSum += ShedC[shed_c];
+        ShadeC = milkProductions[2]["ShadeC"];
+        ShadeCSum = 0;
+        for(shade_c= 0; shade_c< ShadeC.length; shade_c++){
+            ShadeCSum += ShadeC[shade_c];
 
         }
 
-        ShedD = milkProductions[3]["ShadeD"];
-        ShedDSum = 0;
-        for(shed_d= 0; shed_d< ShedD.length; shed_d++){
-            ShedDSum += ShedD[shed_d];
+        ShadeD = milkProductions[3]["ShadeD"];
+        ShadeDSum = 0;
+        for(shade_d= 0; shade_d< ShadeD.length; shade_d++){
+            ShadeDSum += ShadeD[shade_d];
 
         }        
 
-        TotalMilk = ShedASum + ShedBSum + ShedCSum + ShedDSum
+        TotalMilk = ShadeASum + ShadeBSum + ShadeCSum + ShadeDSum
 
 
     let totalMilkProduction =  TotalMilk * sellling_price
