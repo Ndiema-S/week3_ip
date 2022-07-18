@@ -72,3 +72,17 @@ body {
     left: 600px;
     padding: 10px;
 }
+
+
+
+
+
+.milk_form {
+    display: flex;
+    margin-left: 20%;
+    background-color: white;
+    position: absolute;
+    top: 200px;
+    left: 600px;
+    padding: 10px;
+}
