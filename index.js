@@ -95,6 +95,7 @@ const incomeOverTime = () => {
 
 
     let totalMilkProduction =  TotalMilk * sellling_price
+    let totalIncomePerMonth = totalMilkProduction *4
     document.getElementById("Sum").innerHTML = "Your weekly income will be ksh " + totalMilkProduction;
     // return totalMilkProduction;
 }
